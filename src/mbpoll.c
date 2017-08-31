@@ -20,6 +20,7 @@
 #include <signal.h>
 #include <float.h>
 #include <assert.h>
+#include <libgen.h>
 #include <modbus/modbus.h>
 #include <sysio/delay.h>
 #include <sysio/serial.h>
@@ -1181,6 +1182,7 @@ vHello (void) {
 void
 vUsage (FILE * stream, int exit_msg) {
   char * sMyName =  basename (progname);
+  printf("here? %s\n",progname);
   fprintf (stream,
            "usage : %s [ options ] device|host [ writevalues... ] [ options ]\n\n"
            , sMyName);

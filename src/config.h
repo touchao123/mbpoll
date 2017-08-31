@@ -28,6 +28,7 @@ extern "C" {
 #define RTU_BAUDRATE_MAX  921600
 #define CHIPIO_SLAVEADDR_MIN 0x03
 #define CHIPIO_SLAVEADDR_MAX 0x77
+#define HAVE_STRLCPY
 
 /* default values =========================================================== */
 #define DEFAULT_MODE          eModeTcp
